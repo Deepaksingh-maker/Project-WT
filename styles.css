@@ -1,0 +1,690 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9cf;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    
+  }
+  .containern{
+    background-color: rgba(108, 67, 47, 0.244);
+    padding: 40px;
+  }
+  
+  /* Header Styles */
+  .header-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+ 
+  
+  .header-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .header-nav li {
+    margin-right: 20px;
+  }
+  
+  .header-nav a {
+    color: #337ab7;
+    text-decoration: none;
+    border-bottom: none; /* remove underline on hover */
+  }
+  
+  .header-nav a:hover {
+    border-bottom: 2px solid #b73533; /* add underline on hover */
+  }
+  
+  .header-nav a.active {
+    color: #23527c;
+    border-bottom: 2px solid #883326; /* add underline on active state */
+  }
+  .active {
+    font-weight: bold;
+  }
+  
+  /* Intro Section Styles */
+  
+  .intro-section {
+    background-color: #f7f7f7;
+    padding: 70px;
+    text-align: center;
+    
+  }
+  
+  .img-container {
+    position: relative;
+    padding: 30px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .img-container img {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    border-radius: 10px;
+    
+  }
+  
+  .img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.444);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .intro {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .intro h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+                                                         /* Future Posts Section Styles */
+  
+  .future-posts-section {
+    background-color: #fff;
+    padding: 40px;
+  }
+  
+  .future-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .future-post {
+    width: 30%;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .future-post h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .future-post a {
+    color: #337ab7;
+    text-decoration: none;
+  }
+  
+  /* Footer Styles */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #23527c;
+}
+  
+  /* Animation Styles */
+  
+  .img-container img {
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .img-container:hover img {
+    transform: scale(1.1);
+  }
+   /* Animation Styles */
+  
+   .future-post{
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .future-post:hover {
+    transform: scale(1.1);
+  }
+    
+
+                                               /* Styles specific to all style page */
+
+  .active {
+  font-weight: bold;
+}
+  /* Posts Styles */
+  
+  .posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px;
+  }
+  
+  .post {
+    width: 100%;
+    margin: 15px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .post img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 50px;
+  }
+  
+  .post a {
+    color: #337ab7;
+    text-decoration: none;
+  }
+  
+  .post a:hover {
+    color: #23527c;
+  }
+  
+
+  
+  /* Animation Styles */
+  
+  .post {
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .post:hover {
+    transform: scale(1.1);
+  }
+  /* Animation Styles */
+  
+  .image-gallery {
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .image-gallery:hover {
+    transform: scale(1.001);
+  }
+                                                                          
+
+                                                                 /* Contact Section Styling */
+   .active {
+  font-weight: bold;
+}                                                              
+.contact-section {
+    background-color: #f5f5f5; /* Light gray background */
+    padding: 60px 20px;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    animation: fadeInSection 1.5s ease-in-out;
+}
+
+.contact-section h2 {
+    font-size: 2.5em;
+    color: #3d5a80; /* Dark blue color */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 1.2em;
+    color: #444;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.1em;
+    color: #3d5a80; /* Dark blue for labels */
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #ee6c4d; /* Coral border on focus */
+    outline: none;
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2em;
+    background-color: #3d5a80; /* Dark blue button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-button:hover {
+    background-color: #ee6c4d; /* Coral hover */
+    transform: translateY(-3px);
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        width: 110%;
+    }
+
+    .contact-section h2 {
+        font-size: 2em;
+    }
+
+    .contact-section p {
+        font-size: 1em;
+    }
+}
+                                                                /* Login Section Styling */
+.active {
+  font-weight: bold;
+}                                                                
+.login-section {
+    background-color: #f5f5f5; /* Light gray background */
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.login-container {
+    background-color: #ffffff; /* White background for form */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #3d5a80; /* Dark blue for headings */
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group label {
+    font-size: 1.1em;
+    color: #3d5a80; /* Dark blue label */
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.form-group input {
+    padding: 10px;
+    font-size: 1.1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+    width: 100%;
+}
+
+.form-group input:focus {
+    border-color: #ee6c4d; /* Coral border on focus */
+    outline: none;
+}
+
+.submit-button {
+    padding: 12px;
+    font-size: 1.2em;
+    background-color: #3d5a80; /* Dark blue button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-button:hover {
+    background-color: #ee6c4d; /* Coral on hover */
+    transform: translateY(-3px);
+}
+
+.login-help {
+    font-size: 0.9em;
+    color: #444;
+    margin-top: 10px;
+}
+
+.login-help a {
+    color: #ee6c4d; /* Coral color for signup link */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-help a:hover {
+    color: #3d5a80; /* Dark blue on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .login-container {
+        padding: 30px;
+    }
+
+    .login-container h2 {
+        font-size: 1.8em;
+    }
+}
+
+                                                                              
+
+
+
+                                                                           /* Wardrobe Section Styles */
+
+.active {
+  font-weight: bold;
+}
+
+.wardrobe-section {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.items-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item-card {
+  margin: 20px;
+  width: calc(33.33% - 20px);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease-in-out; /* Add transition effect */
+}
+
+.item-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.5s ease-in-out; /* Add transition effect */
+}
+
+.item-card:hover img {
+  transform: scale(1.1); /* Zoom in on hover */
+}
+
+.item-card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.item-card p {
+  margin-bottom: 20px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .items-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .item-card {
+    padding: 10px;
+  }
+  .item-card img {
+    height: 100px;
+  }
+}
+
+                                                              /* Trends Section Styles */
+.active {
+  font-weight: bold;
+}
+.trends-section {
+  background-color: #f7f7f7;
+  padding: 40px;
+}
+
+.trend-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.trend-card {
+  margin: 20px;
+  width: calc(33.33% - 20px);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease-in-out; /* Add transition effect */
+}
+
+.trend-card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.trend-card p {
+  margin-bottom: 20px;
+}
+
+.trend-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.5s ease-in-out; /* Add transition effect */
+}
+.trend-card:hover img {
+  transform: scale(1.1); /* Zoom in on hover */
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .trend-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .trend-card {
+    padding: 10px;
+  }
+  .trend-card img {
+    height: 100px;
+  }
+}
+
+
+
+                                                            /* Images of Sustainable Fashion */
+.active {
+  font-weight: bold;
+}
+
+.image-rows {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-row {
+  margin: 20px;
+  width: calc(33.33% - 20px);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease-in-out; /* Add transition effect */
+}
+
+.image-row img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.5s ease-in-out; /* Add transition effect */
+}
+
+.image-row p {
+  margin-bottom: 20px;
+}
+.image-row:hover img {
+  transform: scale(1.1); /* Zoom in on hover */
+}
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .image-rows {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-row {
+    padding: 10px;
+  }
+  .image-row img {
+    height: 100px;
+  }
+}
+                                                      /*Accessories to Elevate Your Look */
+
+.accessories-section {
+  background-color: #f7f7f7;
+  padding: 40px;
+}
+.accessory-rows{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.accessory-row {
+  margin: 20px;
+  width: calc(33.33% - 20px);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease-in-out; /* Add transition effect */
+}
+
+.accessory-row img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.5s ease-in-out; /* Add transition effect */
+}
+
+.accessory-row p {
+  margin-bottom: 20px;
+}
+.accessory-row:hover img {
+  transform: scale(1.1); /* Zoom in on hover */
+}
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .accessory-rows {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .accessory-row {
+    padding: 10px;
+  }
+  .accessory-row img {
+    height: 100px;
+  }
+}
